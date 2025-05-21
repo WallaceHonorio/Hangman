@@ -18,6 +18,8 @@
 
 using namespace std;
 
+void imprime_cabecalho();
+
 string palavra_secreta; 
 map<char, bool> chutou;
 vector<char> chutes_errados;

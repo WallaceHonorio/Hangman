@@ -1,6 +1,7 @@
 #include <vector>
 #include <string>
 #include "le_arquivo.hpp"
+#include <time.h>
 
 extern std::string palavra_secreta;
 
