@@ -22,7 +22,6 @@
     <ClCompile Include="Hangman\adiciona_palavra.cpp" />
     <ClCompile Include="Hangman\chuta.cpp" />
     <ClCompile Include="Hangman\forca.cpp" />
-    <ClCompile Include="Hangman\imprime_cabecalho.cpp" />
     <ClCompile Include="Hangman\imprime_erros.cpp" />
     <ClCompile Include="Hangman\imprime_palavra.cpp" />
     <ClCompile Include="Hangman\letra_existe.cpp" />

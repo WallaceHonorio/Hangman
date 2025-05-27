@@ -24,9 +24,6 @@
     <ClCompile Include="Hangman\forca.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Hangman\imprime_cabecalho.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Hangman\imprime_erros.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
