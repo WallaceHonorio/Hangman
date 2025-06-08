@@ -8,14 +8,15 @@
 #include "chuta.hpp"
 #include "imprime_erros.hpp"
 #include "imprime_palavra.hpp"
+#include "chuta.hpp"
 #include "adiciona_palavra.hpp"
 #include "nao_acertou.hpp"
 
 using namespace std;
 
-string palavra_secreta;
-map<char, bool> chutou;
-vector<char> chutes_errados;
+static string palavra_secreta;
+static map<char, bool> chutou;
+static vector<char> chutes_errados;
 
 int main()
 {
@@ -24,7 +25,7 @@ int main()
     palavra_secreta = sorteia_palavra();
 
     while(nao_acertou(palavra_secreta, chutou) && chutes_errados.size() < 5) {
-        imprime_erros(chutes_errados);
+        Forca::imprime_erros(chutes_errados);
 
         imprime_palavra(palavra_secreta, chutou);
 
@@ -38,7 +39,7 @@ int main()
         cout << "Você perdeu! Tente novamente!" << endl;
     }
     else{
-        cout << "Parabens! Você acertou a palavra secreta!" << endl;
+        cout << "Parabéns! Você acertou a palavra secreta!" << endl;
 
         cout << "Você deseja adicionar uma nova palavra ao banco? (S/N) ";
         char resposta;
